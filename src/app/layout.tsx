@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en" className="light">
       <body
         className={cn(
-          "min-h-screen font-sans antialiased",
+          "min-h-[5000px] font-sans antialiased",
           inter.className
         )}
       >
