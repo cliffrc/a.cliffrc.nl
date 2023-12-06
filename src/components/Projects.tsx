@@ -1,16 +1,22 @@
 import { Clapperboard } from "lucide-react";
 import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
   return (
-    <section className="scroll-mt-[4.7rem] " id="projects">
-      <Clapperboard className="mt-16 -mb-1 h-12 w-12 text-zinc-600/50 shadow-3xl dark:text-white/60" />
-      <div>Projects</div>
-      <ul>
-        <li>10strata, with PapyInChat</li>
-        <li>We Style Stuff</li>
-        <li>Luiard Press</li>
-      </ul>
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="projects"
+    >
+      <Clapperboard className="h-12 w-12 text-zinc-600/50" />
+      <SectionHeader>Projects</SectionHeader>
+      <div>
+        <ul>
+          <li>10strata, with PapyInChat</li>
+          <li>We Style Stuff</li>
+          <li>Luiard Press</li>
+        </ul>
+      </div>
     </section>
   );
 };

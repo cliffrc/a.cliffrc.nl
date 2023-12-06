@@ -1,12 +1,16 @@
 import React from "react";
 import { Waves } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const Experience = () => {
   return (
-    <section className="scroll-mt-[4.7rem] " id="experience">
-      <Waves className="mt-16 -mb-1 h-12 w-12 text-zinc-600/50 shadow-3xl  dark:text-white/60" />
-      <div>Experience</div>
-      <div className="max-w-prose">
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem] flex flex-col items-center"
+      id="experience"
+    >
+      <Waves className="h-12 w-12 text-zinc-600/50" />
+      <SectionHeader>Experience</SectionHeader>
+      <div className="max-w-prose justify-center text-center">
         <p>
           Since 2019 I have self-funded the running my own small firm. With
           varying results, though I have high hopes for the above projects.

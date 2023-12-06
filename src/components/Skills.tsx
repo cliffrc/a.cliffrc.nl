@@ -14,9 +14,12 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section className="scroll-mt-[4.7rem] " id="skills">
-      <div>Skills</div>
-      <Layers3 className="mt-16 -mb-1 h-12 w-12 text-zinc-600/50  dark:text-white/60" />
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="skills"
+    >
+      <Layers3 className="h-12 w-12 text-zinc-600/50" />
+
       <SectionHeader>My skills</SectionHeader>
 
       <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">

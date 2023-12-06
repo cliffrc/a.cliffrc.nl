@@ -1,12 +1,16 @@
 import React from "react";
 import { PenLine } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const About = () => {
   return (
-    <section className="scroll-mt-[4.7rem] " id="about">
-      <PenLine className="mt-16 -mb-1 h-12 w-12 text-zinc-600/50 shadow-3xl items-center  dark:text-white/60" />
-      <div>About</div>
-      <p className="max-w-prose ">
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="about"
+    >
+      <PenLine className="h-12 w-12 text-zinc-600/50" />
+      <SectionHeader>About</SectionHeader>
+      <p className="max-w-prose">
         Hello! I'm Cliff. I started learning web development in May 2020,
         which is the start of the pandemic. I have nothing much to do so I
         decided to learn web development from a udemy course, then started
