@@ -30,41 +30,5 @@ As `src/components/*.tsx` we want these:
 
 ## Basics
 
-- Remove contents of `src/app/page.tsx` leaving `<main>..</main>`.
+- Remove contents of `src/app/page.tsx`, to be replaced with `<MaxWidthWrapper>...`.
 - Create `src/lib/utils.ts` and run `pnpm i clsx tailwind-merge`
-
-```ts
-// @/src/lib/utils.ts
-import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-```
-
-## Add MaxWidthWrapper.tsx
-
-### @/src/app/layout.tsx
-
-```jsx
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode,
-}) {
-  return (
-    <html lang="en" className="light">
-      <body
-        className={cn(
-          "min-h-screen font-sans antialiased grainy",
-          inter.className
-        )}
-      >
-        <Navbar />
-        {children}
-      </body>
-    </html>
-  );
-}
-```
