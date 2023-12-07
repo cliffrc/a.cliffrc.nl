@@ -4,9 +4,9 @@ import SectionHeader from "./SectionHeader";
 
 const Contact = () => {
   return (
-    <section className="" id="contact">
-      <HeartPulse className="" />
-      <SectionHeader>Contact</SectionHeader>
+    <section className="mt-12 flex flex-col items-center" id="contact">
+      <HeartPulse className="h-12 w-12 text-muted-foreground" />
+      <h2 className="mb-2 text-2xl font-semibold">Contact</h2>
       <p>FIXME up with a form please</p>
     </section>
   );

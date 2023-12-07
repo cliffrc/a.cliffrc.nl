@@ -42,7 +42,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light  min-h-[5000px] font-sans antialiased">
-      <body className={cn("grainy", inter.className, josefin.variable)}>
+      <body
+        className={cn(
+          "grainy bg-white text-foreground",
+          inter.className,
+          josefin.variable,
+        )}
+      >
         <Navbar />
         {children}
         <Footer />

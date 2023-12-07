@@ -5,11 +5,7 @@ type SectionHeadingProps = {
 };
 
 const SectionHeader = ({ children }: SectionHeadingProps) => {
-  return (
-    <>
-      <h2 className="">{children}</h2>
-    </>
-  );
+  return <h2 className="text-zinc-700">{children}</h2>;
 };
 
 export default SectionHeader;
