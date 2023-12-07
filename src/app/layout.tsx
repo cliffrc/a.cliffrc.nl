@@ -35,12 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body
-        className={cn(
-          "min-h-[5000px] font-sans antialiased",
-          inter.className
-        )}
-      >
+      <body className={cn("font-sans antialiased", inter.className)}>
         <Navbar />
         {children}
         <Footer />

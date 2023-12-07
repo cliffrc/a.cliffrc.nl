@@ -4,11 +4,8 @@ import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
   return (
-    <section
-      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
-      id="projects"
-    >
-      <Clapperboard className="h-12 w-12 text-zinc-600/50" />
+    <section className="" id="projects">
+      <Clapperboard className="" />
       <SectionHeader>Projects</SectionHeader>
       <div>
         <ul>
