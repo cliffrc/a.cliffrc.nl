@@ -4,7 +4,10 @@ import SectionHeader from "./SectionHeader";
 
 const About = () => {
   return (
-    <section className="mt-12 flex flex-col items-center" id="about">
+    <section
+      className="mt-12 flex scroll-mt-28 flex-col items-center"
+      id="about"
+    >
       <PenLine className="h-12 w-12 text-muted-foreground" />
       <h2 className="text-2xl font-semibold">About</h2>
       <div className="mt-2 max-w-prose rounded-xl bg-foreground/10 px-9 pb-2 pt-8 text-sm">

@@ -6,7 +6,10 @@ import PillBox from "./PillBox";
 
 const Projects = () => {
   return (
-    <section className="mt-12 flex flex-col items-center" id="projects">
+    <section
+      className=" mt-12 flex scroll-mt-28 flex-col items-center"
+      id="projects"
+    >
       <Clapperboard className="h-12 w-12 text-muted-foreground" />
       <h2 className="mb-2 text-2xl font-semibold">Projects</h2>
 

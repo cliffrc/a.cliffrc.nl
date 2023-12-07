@@ -8,7 +8,10 @@ import PillBox from "./PillBox";
 
 const Skills = () => {
   return (
-    <section className="mt-12" id="skills">
+    <section
+      className="mt-20 flex scroll-mt-28 flex-col items-center"
+      id="skills"
+    >
       <Layers3 className="h-12 w-12 text-muted-foreground" />
       <h2 className="mb-2 text-2xl font-semibold">My skills</h2>
 

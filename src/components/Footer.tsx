@@ -5,22 +5,9 @@ import { ActivityIcon, Instagram, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="mx-8 mt-20 rounded-lg bg-destructive/10 px-10 py-4">
-      <div className="">
-        <p className="small-caps text-xs">
-          &copy; {lightFormat(new Date(), "yyyy")} {metadata.creator}. All
-          rights reserved.
-        </p>
-        <small className="">
-          {/** Add this to metadata in layout and use metadata object to pull in code. Do same with date*/}
-          built with TailwindCSS, Next.js (App Router and Server Actions),
-          TypeScript, Vercel hosting
-        </small>
-      </div>
-      {/** FIX formatting here */}
-
-      <div className="flex flex-col items-center pb-4">
-        <ActivityIcon className="divIcon2" />
+    <footer className="mb-10 mt-10 px-4 text-center text-gray-500">
+      <ActivityIcon className="divIcon2 mx-auto" />
+      <div className="mx-auto mb-8 mt-8 flex max-w-xs flex-col items-center rounded-xl bg-zinc-300/20 py-12 pb-4 pt-2">
         <ul className="flex flex-row justify-center gap-3">
           <li className="">
             <a href="https://instgram.com/cliffrcNL">
@@ -39,6 +26,18 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <div className="border-t-[1px] border-zinc-600/50 p-6 ">
+        <p className="small-caps text-xs">
+          &copy; {lightFormat(new Date(), "yyyy")} {metadata.creator}. All
+          rights reserved.
+        </p>
+        <small className="small-caps text-[0.675rem] font-normal tracking-wide text-zinc-400">
+          {/** Add this to metadata in layout and use metadata object to pull in code. Do same with date*/}
+          Handcrafted with TailwindCSS, Next.js (App Router and Server Actions),
+          TypeScript, Vercel hosting
+        </small>
+      </div>
+      {/** FIX formatting here */}
     </footer>
   );
 };
