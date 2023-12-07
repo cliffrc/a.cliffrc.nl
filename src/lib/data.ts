@@ -54,9 +54,15 @@ export const businessSkillsData = [
 ] as const;
 
 export const personalSkillsData = [
-  "goal-driven",
-  "creative",
-  "tenacious",
-  "persistent",
-  "resilient",
+  "Goal-driven",
+  "Creative",
+  "Tenacious",
+  "Persistent",
+  "Resilient",
+] as const;
+
+export const personalProjectsData = [
+  "10strata, with PapyInChat",
+  "We Style Stuff",
+  "Luiard Press",
 ] as const;
