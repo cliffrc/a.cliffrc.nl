@@ -1,57 +1,23 @@
 import {
-  techSkillsData,
   businessSkillsData,
   personalSkillsData,
+  techSkillsData,
 } from "@/lib/data";
-import SectionHeader from "./SectionHeader";
-import {
-  ActivityIcon,
-  ArrowDownFromLine,
-  Layers3,
-  Workflow,
-} from "lucide-react";
-import React from "react";
+import { ActivityIcon, Layers3 } from "lucide-react";
+import PillBox from "./PillBox";
 
 const Skills = () => {
   return (
-    <section className="" id="skills">
-      <Layers3 className="" />
+    <section className="mt-12" id="skills">
+      <Layers3 className="h-12 w-12 text-muted-foreground" />
+      <h2 className="mb-2 text-2xl font-semibold">My skills</h2>
 
-      <SectionHeader>My skills</SectionHeader>
-
-      <div className="">
-        <h4 className="">Technical Skills</h4>
-
-        <ul className="">
-          {techSkillsData.map((skill, index) => (
-            <li className="" key={index}>
-              {skill}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <ActivityIcon className="" />
-      <div className="">
-        <h4 className="">Business and Marketing Skills</h4>
-        <ul className="">
-          {businessSkillsData.map((skill, index) => (
-            <li className="" key={index}>
-              {skill}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <ActivityIcon className="" />
-      <div className="">
-        <h4 className="">Personal Qualities</h4>
-        <ul className="">
-          {personalSkillsData.map((skill, index) => (
-            <li className="" key={index}>
-              {skill}
-            </li>
-          ))}
-        </ul>
-      </div>
+      {/* pill-boxes with title*/}
+      <PillBox data={techSkillsData} title="Technical + Design Skills" />
+      <ActivityIcon className="my-3 h-6 w-6 -rotate-[10deg] text-4xl font-semibold text-zinc-600/50  dark:text-white/60" />
+      <PillBox data={businessSkillsData} title="Business + Marketing Skills" />
+      <ActivityIcon className="divIcon2" />
+      <PillBox data={personalSkillsData} title="Personal Qualities" />
     </section>
   );
 };
