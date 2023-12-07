@@ -41,6 +41,205 @@ export default function RootLayout({
 }
 ```
 
+### @/app/components/Navbar.tsx
+
+```tsx
+const Navbar = () => {
+  return (
+    <header className="z-[999] relative mt-16 sm:mt-10">
+      <div className="w-full h-[3.25rem] fixed top-0 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full left-1/2 -translate-x-1/2 "></div>
+      <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-12 py-2 sm:top-[1.7rem] sm:py-0">
+        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-1 font-medium text-sm text-zinc-500/90 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+          {navLinks.map((navlink) => (
+            <li
+              key={navlink.hash}
+              className="h-3/4 flex items-center justify-center relative
+            "
+            >
+              <Link
+                className={cn(
+                  "flex w-full items-center justify-centerp-3 hover:text-zinc-950 transition dark:text-zinc-500 dark:hover:gray-300"
+                )}
+                href={navlink.hash}
+              >
+                {navlink.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+};
+```
+
+### @/.../[section] - with text
+
+```tsx
+const About = () => {
+  return (
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="about"
+    >
+      <PenLine className="h-12 w-12 text-zinc-600/50" />
+      <SectionHeader>About H2 subtitle</SectionHeader>
+      <p className="max-w-prose">text goes here </p>
+    </section>
+  );
+};
+```
+
+### @/.../[section] - with feature cards
+
+```tsx
+const Skills = () => {
+  return (
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="skills"
+    >
+      <Layers3 className="h-12 w-12 text-zinc-600/50" />
+
+      <SectionHeader>My skills</SectionHeader>
+
+      <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">
+        <h4 className="m-auto w-fit px-3 mb-3 text-xl text-zinc-800 font-medium border-2 border-zinc-600/50 rounded-full   dark:text-white/60">
+          Technical Skills
+        </h4>
+
+        <ul className="text-sm mt-2 flex flex-wrap justify-center gap-2  text-zinc-800">
+          {techSkillsData.map((skill, index) => (
+            <li
+              className="bg-gray-400/40 border-zinc-400/50 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
+              key={index}
+            >
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <ActivityIcon className="my-3 h-6 w-6 text-zinc-600/50 text-4xl font-semibold -rotate-[10deg]  dark:text-white/60" />
+      <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">
+        <h4 className="m-auto w-fit px-3 mb-3 text-xl text-zinc-800 font-medium border-2 border-zinc-600/50 rounded-full   dark:text-white/60 underline underline-offset-4 decoration-1">
+          Business and Marketing Skills
+        </h4>
+        <ul className="text-sm mt-2 flex flex-wrap justify-center gap-2  text-zinc-800">
+          {businessSkillsData.map((skill, index) => (
+            <li
+              className="bg-gray-400/40 border-zinc-400/50 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
+              key={index}
+            >
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <ActivityIcon className="my-3 h-6 w-6 text-zinc-600/50 text-4xl font-semibold -rotate-[10deg]  dark:text-white/60" />
+      <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">
+        <h4 className="m-auto w-fit px-3 mb-3 text-xl text-zinc-800 font-medium border-2 border-zinc-600/50 rounded-full   dark:text-white/60">
+          Personal Qualities
+        </h4>
+        <ul className="text-sm capitalize mt-2 flex flex-wrap justify-center gap-2  text-zinc-800">
+          {personalSkillsData.map((skill, index) => (
+            <li
+              className="bg-gray-400/40 border-zinc-400/50 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
+              key={index}
+            >
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+};
+```
+
+### @/.../[section] - with tiny gallery
+
+```tsx
+const Projects = () => {
+  return (
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="projects"
+    >
+      <Clapperboard className="h-12 w-12 text-zinc-600/50" />
+      <SectionHeader>Projects</SectionHeader>
+      <div>
+        <ul>
+          <li>10strata, with PapyInChat</li>
+          <li>We Style Stuff</li>
+          <li>Luiard Press</li>
+        </ul>
+      </div>
+    </section>
+  );
+};
+```
+
+### @/.../[section] - with form
+
+```tsx
+const Contact = () => {
+  return (
+    <section
+      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      id="contact"
+    >
+      <HeartPulse className="h-12 w-12 text-zinc-600/50" />
+      <SectionHeader>Contact</SectionHeader>
+      <p>FIXME up with a form please</p>
+    </section>
+  );
+};
+```
+
+### @/.../[section] - footer
+
+```tsx
+const Footer = () => {
+  return (
+    <footer className="w-full mb-10 px-4 text-gray-500">
+      <div className="w-screen border border-1 border-zinc-500 sm:w-[36rem]">
+        <small className="mb-2 block text-xs">
+          &copy; {lightFormat(new Date(), "yyyy")} {metadata.creator}. All
+          rights reserved.
+        </small>
+        <p className="text-xs">
+          {/** Add this to metadata in layout and use metadata object to pull in code. Do same with date*/}
+          built with TailwindCSS, Next.js (App Router and Server Actions), TypeScript,
+          Vercel hosting
+        </p>
+      </div>
+      {/** FIX formatting here */}
+
+      <div className="relative">
+        <ActivityIcon className="absolute -top-1 right-1/2 translate-x-1/2 text-zinc-600/70 text-4xl font-semibold -rotate-[10deg] " />
+        <ul className="mt-3 p-4 w-0.8 flex text-zinc-600/70 items-center justify-between gap-4 bg-teal-300/40 rounded-3xl border border-teal-800/50 shadow-lg shadow-black/[0.1] backdrop-blur-[0.5rem]">
+          <li className=" hover:text-zinc-800 font-semibold">
+            <a href="https://instagram.com/cliffrcNL">
+              <Instagram />
+            </a>
+          </li>
+          <li className=" hover:text-zinc-800 font-semibold">
+            <a href="https://youtube.com/10strata">
+              <Youtube />
+            </a>
+          </li>
+          <li className=" hover:text-zinc-800 font-semibold">
+            <a href="https://twitter.com/10strata">
+              <Twitter />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
+```
+
 ### @/public: Project Image EXAMPLE
 
 ![Project Image](https://raw.githubusercontent.com/joschan21/quill/master/public/thumbnail.png)
@@ -145,25 +344,25 @@ export const navLinks = [
 
 ### src/db/index.ts: Prisma Instantiation
 
-```
-import { PrismaClient } from '@prisma/client'
+```ts
+import { PrismaClient } from "@prisma/client";
 
 declare global {
   // eslint-disable-next-line no-var
-  var cachedPrisma: PrismaClient
+  var cachedPrisma: PrismaClient;
 }
 
-let prisma: PrismaClient
-if (process.env.NODE_ENV === 'production') {
-  prisma = new PrismaClient()
+let prisma: PrismaClient;
+if (process.env.NODE_ENV === "production") {
+  prisma = new PrismaClient();
 } else {
   if (!global.cachedPrisma) {
-    global.cachedPrisma = new PrismaClient()
+    global.cachedPrisma = new PrismaClient();
   }
-  prisma = global.cachedPrisma
+  prisma = global.cachedPrisma;
 }
 
-export const db = prisma
+export const db = prisma;
 ```
 
 ### PdfRenderer Imports - src/components/PdfRenderer.tsx
