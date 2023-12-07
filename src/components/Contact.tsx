@@ -18,38 +18,6 @@ const Contact = () => {
           </a>{" "}
           or through this form.
         </p>
-
-        <form
-          className="mt-10 flex flex-col dark:text-black"
-          action={async (formData) => {
-            const { data, error } = await sendEmail(formData);
-
-            if (error) {
-              toast.error(error);
-              return;
-            }
-
-            toast.success("Email sent successfully!");
-          }}
-        >
-          <input
-            className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
-            name="senderEmail"
-            type="email"
-            required
-            maxLength={500}
-            placeholder="Your email"
-          />
-          <textarea
-            className="borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
-            name="message"
-            placeholder="Your message"
-            required
-            maxLength={5000}
-          />
-
-          {/* <SubmitBtn /> */}
-        </form>
       </div>
     </section>
   );
