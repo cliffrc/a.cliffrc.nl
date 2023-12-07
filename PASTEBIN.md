@@ -41,11 +41,35 @@ export default function RootLayout({
 }
 ```
 
+# <<<<<<< HEAD
+
+### /page.tsx
+
+```tsx
+<div className="relative isolate">
+  <div
+    aria-hidden="true"
+    className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+  >
+    <div
+      style={{
+        clipPath:
+          "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+      }}
+      className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+    />
+  </div>
+</div>
+```
+
+> > > > > > > clean-work
+
 ### @/app/components/Navbar.tsx
 
 ```tsx
 const Navbar = () => {
   return (
+<<<<<<< HEAD
     <header className="z-[999] relative mt-16 sm:mt-10">
       <div className="w-full h-[3.25rem] fixed top-0 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full left-1/2 -translate-x-1/2 "></div>
       <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-12 py-2 sm:top-[1.7rem] sm:py-0">
@@ -54,11 +78,25 @@ const Navbar = () => {
             <li
               key={navlink.hash}
               className="h-3/4 flex items-center justify-center relative
+=======
+    <header className="relative z-[999] mt-16 sm:mt-10">
+      <div className="fixed left-1/2 top-0 h-[3.25rem] w-full -translate-x-1/2 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full "></div>
+      <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:py-0">
+        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-1 text-sm font-medium text-zinc-500/90 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+          {navLinks.map((navlink) => (
+            <li
+              key={navlink.hash}
+              className="relative flex h-3/4 items-center justify-center
+>>>>>>> clean-work
             "
             >
               <Link
                 className={cn(
+<<<<<<< HEAD
                   "flex w-full items-center justify-centerp-3 hover:text-zinc-950 transition dark:text-zinc-500 dark:hover:gray-300"
+=======
+                  "dark:hover:gray-300 flex w-full items-center justify-center p-3 transition hover:text-zinc-950 dark:text-zinc-500",
+>>>>>>> clean-work
                 )}
                 href={navlink.hash}
               >
@@ -79,7 +117,11 @@ const Navbar = () => {
 const About = () => {
   return (
     <section
+<<<<<<< HEAD
       className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+=======
+      className="mt-12 flex  flex-col items-center sm:scroll-mt-[4.7rem]"
+>>>>>>> clean-work
       id="about"
     >
       <PenLine className="h-12 w-12 text-zinc-600/50" />
@@ -96,22 +138,26 @@ const About = () => {
 const Skills = () => {
   return (
     <section
+<<<<<<< HEAD
       className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+=======
+      className="mt-12 flex  flex-col items-center sm:scroll-mt-[4.7rem]"
+>>>>>>> clean-work
       id="skills"
     >
       <Layers3 className="h-12 w-12 text-zinc-600/50" />
 
       <SectionHeader>My skills</SectionHeader>
 
-      <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">
-        <h4 className="m-auto w-fit px-3 mb-3 text-xl text-zinc-800 font-medium border-2 border-zinc-600/50 rounded-full   dark:text-white/60">
+      <div className="m-auto max-w-md  items-center rounded-xl bg-zinc-300/10 p-4 text-center">
+        <h4 className="m-auto mb-3 w-fit rounded-full border-2 border-zinc-600/50 px-3 text-xl font-medium text-zinc-800   dark:text-white/60">
           Technical Skills
         </h4>
 
-        <ul className="text-sm mt-2 flex flex-wrap justify-center gap-2  text-zinc-800">
+        <ul className="mt-2 flex flex-wrap justify-center gap-2 text-sm  text-zinc-800">
           {techSkillsData.map((skill, index) => (
             <li
-              className="bg-gray-400/40 border-zinc-400/50 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
+              className="rounded-xl border-zinc-400/50 bg-gray-400/40 px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
               key={index}
             >
               {skill}
@@ -119,15 +165,15 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <ActivityIcon className="my-3 h-6 w-6 text-zinc-600/50 text-4xl font-semibold -rotate-[10deg]  dark:text-white/60" />
-      <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">
-        <h4 className="m-auto w-fit px-3 mb-3 text-xl text-zinc-800 font-medium border-2 border-zinc-600/50 rounded-full   dark:text-white/60 underline underline-offset-4 decoration-1">
+      <ActivityIcon className="my-3 h-6 w-6 -rotate-[10deg] text-4xl font-semibold text-zinc-600/50  dark:text-white/60" />
+      <div className="m-auto max-w-md  items-center rounded-xl bg-zinc-300/10 p-4 text-center">
+        <h4 className="m-auto mb-3 w-fit rounded-full border-2 border-zinc-600/50 px-3 text-xl font-medium text-zinc-800   underline decoration-1 underline-offset-4 dark:text-white/60">
           Business and Marketing Skills
         </h4>
-        <ul className="text-sm mt-2 flex flex-wrap justify-center gap-2  text-zinc-800">
+        <ul className="mt-2 flex flex-wrap justify-center gap-2 text-sm  text-zinc-800">
           {businessSkillsData.map((skill, index) => (
             <li
-              className="bg-gray-400/40 border-zinc-400/50 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
+              className="rounded-xl border-zinc-400/50 bg-gray-400/40 px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
               key={index}
             >
               {skill}
@@ -135,15 +181,15 @@ const Skills = () => {
           ))}
         </ul>
       </div>
-      <ActivityIcon className="my-3 h-6 w-6 text-zinc-600/50 text-4xl font-semibold -rotate-[10deg]  dark:text-white/60" />
-      <div className="bg-zinc-300/10 p-4  m-auto max-w-md items-center text-center rounded-xl">
-        <h4 className="m-auto w-fit px-3 mb-3 text-xl text-zinc-800 font-medium border-2 border-zinc-600/50 rounded-full   dark:text-white/60">
+      <ActivityIcon className="my-3 h-6 w-6 -rotate-[10deg] text-4xl font-semibold text-zinc-600/50  dark:text-white/60" />
+      <div className="m-auto max-w-md  items-center rounded-xl bg-zinc-300/10 p-4 text-center">
+        <h4 className="m-auto mb-3 w-fit rounded-full border-2 border-zinc-600/50 px-3 text-xl font-medium text-zinc-800   dark:text-white/60">
           Personal Qualities
         </h4>
-        <ul className="text-sm capitalize mt-2 flex flex-wrap justify-center gap-2  text-zinc-800">
+        <ul className="mt-2 flex flex-wrap justify-center gap-2 text-sm capitalize  text-zinc-800">
           {personalSkillsData.map((skill, index) => (
             <li
-              className="bg-gray-400/40 border-zinc-400/50 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
+              className="rounded-xl border-zinc-400/50 bg-gray-400/40 px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:hover:text-yellow-200 dark:hover:underline dark:hover:underline-offset-8"
               key={index}
             >
               {skill}
@@ -162,7 +208,7 @@ const Skills = () => {
 const Projects = () => {
   return (
     <section
-      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      className="mt-12 flex  flex-col items-center sm:scroll-mt-[4.7rem]"
       id="projects"
     >
       <Clapperboard className="h-12 w-12 text-zinc-600/50" />
@@ -185,7 +231,7 @@ const Projects = () => {
 const Contact = () => {
   return (
     <section
-      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
+      className="mt-12 flex  flex-col items-center sm:scroll-mt-[4.7rem]"
       id="contact"
     >
       <HeartPulse className="h-12 w-12 text-zinc-600/50" />
@@ -201,8 +247,8 @@ const Contact = () => {
 ```tsx
 const Footer = () => {
   return (
-    <footer className="w-full mb-10 px-4 text-gray-500">
-      <div className="w-screen border border-1 border-zinc-500 sm:w-[36rem]">
+    <footer className="mb-10 w-full px-4 text-gray-500">
+      <div className="border-1 w-screen border border-zinc-500 sm:w-[36rem]">
         <small className="mb-2 block text-xs">
           &copy; {lightFormat(new Date(), "yyyy")} {metadata.creator}. All
           rights reserved.
@@ -216,19 +262,19 @@ const Footer = () => {
       {/** FIX formatting here */}
 
       <div className="relative">
-        <ActivityIcon className="absolute -top-1 right-1/2 translate-x-1/2 text-zinc-600/70 text-4xl font-semibold -rotate-[10deg] " />
-        <ul className="mt-3 p-4 w-0.8 flex text-zinc-600/70 items-center justify-between gap-4 bg-teal-300/40 rounded-3xl border border-teal-800/50 shadow-lg shadow-black/[0.1] backdrop-blur-[0.5rem]">
-          <li className=" hover:text-zinc-800 font-semibold">
+        <ActivityIcon className="absolute -top-1 right-1/2 translate-x-1/2 -rotate-[10deg] text-4xl font-semibold text-zinc-600/70 " />
+        <ul className="w-0.8 mt-3 flex items-center justify-between gap-4 rounded-3xl border border-teal-800/50 bg-teal-300/40 p-4 text-zinc-600/70 shadow-lg shadow-black/[0.1] backdrop-blur-[0.5rem]">
+          <li className=" font-semibold hover:text-zinc-800">
             <a href="https://instagram.com/cliffrcNL">
               <Instagram />
             </a>
           </li>
-          <li className=" hover:text-zinc-800 font-semibold">
+          <li className=" font-semibold hover:text-zinc-800">
             <a href="https://youtube.com/10strata">
               <Youtube />
             </a>
           </li>
-          <li className=" hover:text-zinc-800 font-semibold">
+          <li className=" font-semibold hover:text-zinc-800">
             <a href="https://twitter.com/10strata">
               <Twitter />
             </a>
@@ -477,8 +523,7 @@ const pricingItems = [
       },
       {
         text: "Higher-quality responses",
-        footnote:
-          "Better algorithmic responses for enhanced content quality",
+        footnote: "Better algorithmic responses for enhanced content quality",
         negative: true,
       },
       {
@@ -505,8 +550,7 @@ const pricingItems = [
       },
       {
         text: "Higher-quality responses",
-        footnote:
-          "Better algorithmic responses for enhanced content quality",
+        footnote: "Better algorithmic responses for enhanced content quality",
       },
       {
         text: "Priority support",
@@ -560,19 +604,17 @@ export async function getUserSubscriptionPlan() {
   const isSubscribed = Boolean(
     dbUser.stripePriceId &&
       dbUser.stripeCurrentPeriodEnd && // 86400000 = 1 day
-      dbUser.stripeCurrentPeriodEnd.getTime() + 86_400_000 > Date.now()
+      dbUser.stripeCurrentPeriodEnd.getTime() + 86_400_000 > Date.now(),
   );
 
   const plan = isSubscribed
-    ? PLANS.find(
-        (plan) => plan.price.priceIds.test === dbUser.stripePriceId
-      )
+    ? PLANS.find((plan) => plan.price.priceIds.test === dbUser.stripePriceId)
     : null;
 
   let isCanceled = false;
   if (isSubscribed && dbUser.stripeSubscriptionId) {
     const stripePlan = await stripe.subscriptions.retrieve(
-      dbUser.stripeSubscriptionId
+      dbUser.stripeSubscriptionId,
     );
     isCanceled = stripePlan.cancel_at_period_end;
   }
@@ -606,14 +648,12 @@ export async function POST(request: Request) {
     event = stripe.webhooks.constructEvent(
       body,
       signature,
-      process.env.STRIPE_WEBHOOK_SECRET || ""
+      process.env.STRIPE_WEBHOOK_SECRET || "",
     );
   } catch (err) {
     return new Response(
-      `Webhook Error: ${
-        err instanceof Error ? err.message : "Unknown Error"
-      }`,
-      { status: 400 }
+      `Webhook Error: ${err instanceof Error ? err.message : "Unknown Error"}`,
+      { status: 400 },
     );
   }
 
@@ -627,14 +667,14 @@ export async function POST(request: Request) {
 
   if (event.type === "checkout.session.completed") {
     const subscription = await stripe.subscriptions.retrieve(
-      session.subscription as string
+      session.subscription as string,
     );
   }
 
   if (event.type === "invoice.payment_succeeded") {
     // Retrieve the subscription details from Stripe.
     const subscription = await stripe.subscriptions.retrieve(
-      session.subscription as string
+      session.subscription as string,
     );
   }
 

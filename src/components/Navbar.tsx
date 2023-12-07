@@ -5,19 +5,18 @@ import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   return (
-    <header className="z-[999] relative mt-16 sm:mt-10">
-      <div className="w-full h-[3.25rem] fixed top-0 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full left-1/2 -translate-x-1/2 "></div>
-      <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-12 py-2 sm:top-[1.7rem] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-1 font-medium text-sm text-zinc-500/90 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+    <header className="z-[999] mt-16 sm:mt-10">
+      <div className="fixed left-1/2 top-0 h-[3.25rem] w-full -translate-x-1/2 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"></div>
+      <nav className="fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:py-0">
+        <ul className="flex w-[20rem] flex-wrap items-center justify-center gap-1 text-sm font-medium text-zinc-500/90 sm:w-[22rem] sm:flex-nowrap sm:gap-5">
           {navLinks.map((navlink) => (
             <li
               key={navlink.hash}
-              className="h-3/4 flex items-center justify-center relative
-            "
+              className="relative flex h-3/4 items-center justify-center bg-background"
             >
               <Link
                 className={cn(
-                  "flex w-full items-center justify-centerp-3 hover:text-zinc-950 transition dark:text-zinc-500 dark:hover:gray-300"
+                  "dark:hover:gray-300 flex w-full items-center transition hover:text-zinc-950 dark:text-zinc-500",
                 )}
                 href={navlink.hash}
               >

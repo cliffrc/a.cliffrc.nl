@@ -1,22 +1,17 @@
 import { Clapperboard } from "lucide-react";
 import React from "react";
 import SectionHeader from "./SectionHeader";
+import { personalProjectsData } from "@/lib/data";
+import PillBox from "./PillBox";
 
 const Projects = () => {
   return (
-    <section
-      className="mt-12 sm:scroll-mt-[4.7rem]  flex flex-col items-center"
-      id="projects"
-    >
-      <Clapperboard className="h-12 w-12 text-zinc-600/50" />
-      <SectionHeader>Projects</SectionHeader>
-      <div>
-        <ul>
-          <li>10strata, with PapyInChat</li>
-          <li>We Style Stuff</li>
-          <li>Luiard Press</li>
-        </ul>
-      </div>
+    <section className="mt-12 flex flex-col items-center" id="projects">
+      <Clapperboard className="h-12 w-12 text-muted-foreground" />
+      <h2 className="mb-2 text-2xl font-semibold">Projects</h2>
+
+      {/* gallery box of text and images */}
+      <PillBox data={personalProjectsData} title="Business Projects" />
     </section>
   );
 };
