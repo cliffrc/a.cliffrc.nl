@@ -5,17 +5,18 @@ import { ActivityIcon, Instagram, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        &copy; {lightFormat(new Date(), "yyyy")} {metadata.creator}. All
-        rights reserved.
-      </small>
-      <p className="text-xs">
-        {/** Add this to metadata in layout and use metadata object to pull in code. Do same with date*/}
-        built with TailwindCSS, Next.js (App Router and Server Actions),
-        TypeScript, Vercel hosting
-      </p>
-
+    <footer className="w-full mb-10 px-4 text-gray-500">
+      <div className="w-screen border border-1 border-zinc-500 sm:w-[36rem]">
+        <small className="mb-2 block text-xs">
+          &copy; {lightFormat(new Date(), "yyyy")} {metadata.creator}. All
+          rights reserved.
+        </small>
+        <p className="text-xs">
+          {/** Add this to metadata in layout and use metadata object to pull in code. Do same with date*/}
+          built with TailwindCSS, Next.js (App Router and Server Actions),
+          TypeScript, Vercel hosting
+        </p>
+      </div>
       {/** FIX formatting here */}
 
       <div className="relative">

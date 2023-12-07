@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   return (
     <header className="z-[999] relative mt-16 sm:mt-10">
-      <div className="w-full h-[3.25rem] fixed top-0 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] left-1/2 -translate-x-1/2 sm:rounded-full"></div>
-      <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-12 py-2  sm:top-[1.7rem] sm:py-0">
+      <div className="w-full h-[3.25rem] fixed top-0 rounded-none border border-black/40 bg-white/50 backdrop-blur-sm sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full left-1/2 -translate-x-1/2 "></div>
+      <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 h-12 py-2 sm:top-[1.7rem] sm:py-0">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-1 font-medium text-sm text-zinc-500/90 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {navLinks.map((navlink) => (
             <li
