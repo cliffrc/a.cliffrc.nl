@@ -3,7 +3,7 @@ import Image from "next/image";
 const Intro = () => {
   return (
     <section
-      className="mt-28 max-w-[50rem] scroll-mt-28 text-center sm:mb-0"
+      className="mt-28 max-w-[50rem] scroll-mt-28 items-center text-center sm:mb-0"
       id="home"
     >
       <div className="flex items-center justify-center">
@@ -22,7 +22,7 @@ const Intro = () => {
           <span className="absolute bottom-0 right-0 text-4xl">🖖</span>
         </div>
       </div>
-      <h1 className="small-caps mb-10 mt-7 max-w-lg px-4 text-2xl !leading-[1.5] sm:text-2xl">
+      <h1 className="small-caps mb-10 mt-7 max-w-lg px-4 text-center text-4xl !leading-[1.5] sm:text-2xl">
         Hello, I am Cliff. I live here in the machine. It is somewhere in the
         distant vicinity.
       </h1>
