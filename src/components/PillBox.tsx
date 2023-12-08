@@ -14,7 +14,7 @@ const PillBox = ({ data, title }: PillBoxProps) => {
       <ul className="mt-2 flex  flex-wrap justify-center gap-2.5 text-sm">
         {data.map((pillWord, index) => (
           <li
-            className="small-caps rounded-xl bg-zinc-500/30 px-[1.375rem]  pb-1.5 pt-[0.475rem] text-[0.775rem] text-zinc-800"
+            className="small-caps rounded-xl bg-zinc-500/30 px-[1.375rem] pb-1.5  pt-[0.475rem] text-[0.775rem] font-semibold text-zinc-800"
             key={index}
           >
             {pillWord}

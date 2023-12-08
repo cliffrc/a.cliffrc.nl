@@ -26,23 +26,20 @@ export const navLinks = [
 ] as const;
 
 export const techSkillsData = [
+  "TailwindCSS",
   "Next.js",
   "TypeScript",
-  "TailwindCSS",
+  "Git",
+  "Planetscale",
   "tRPC",
   "Prisma",
-  "Planetscale",
   "Pinecone",
   "Vercel",
-  "OpenAI",
   "HTML",
+  "HTMX",
   "SQL",
-  "Git",
-  "Linux / FreeBSD",
   "Python",
   "R",
-  "JavaScript",
-  "HTMX",
 ] as const;
 
 export const businessSkillsData = [

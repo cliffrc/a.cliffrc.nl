@@ -1,5 +1,9 @@
 # PLAYBOOK
 
+## References
+
+- [Integrate Google reCAPTCHA v2 With Next.js 13](https://medium.com/@danielcracbusiness/integrate-google-recaptcha-v2-with-next-js-13-in-under-10-minutes-f25a286bb19e)
+
 ## Generate
 
 ```sh
