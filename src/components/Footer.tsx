@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <footer className="mb-10 mt-10 px-4 text-center text-gray-500">
       <ActivityIcon className="divIcon2 mx-auto" />
-      <div className="mx-auto mb-8 mt-8 flex max-w-xs flex-col items-center rounded-xl bg-zinc-300/20 py-12 pb-4 pt-2">
+      <div className="border-1 mx-auto mb-8 mt-8 flex max-w-xs flex-col items-center rounded-xl border border-foreground/70 bg-zinc-300/20 py-12 pb-4 pt-2">
         <ul className="flex flex-row justify-center gap-3">
           <li className="">
-            <a href="https://instgram.com/cliffrcNL">
+            <a href="https://instagram.com/cliffrcNL">
               <Instagram />
             </a>
           </li>
@@ -20,7 +20,7 @@ const Footer = () => {
             </a>
           </li>
           <li className="">
-            <a href="https://twitter.com/10strata">
+            <a href="https://twitter.com/cliffrc">
               <Twitter />
             </a>
           </li>
