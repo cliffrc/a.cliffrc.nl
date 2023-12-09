@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </div>
       {/* This is for the page content components */}
-      <MaxWidthWrapper className="">
+      <MaxWidthWrapper className="max-w-screen mx-auto items-center sm:max-w-4xl">
         <Intro />
         <About />
         <Skills />

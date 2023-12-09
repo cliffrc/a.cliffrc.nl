@@ -3,7 +3,7 @@ import Image from "next/image";
 const Intro = () => {
   return (
     <section
-      className="mt-28 max-w-[50rem] scroll-mt-28 items-center text-center sm:mb-0"
+      className="mx-auto mt-28 max-w-[50rem]  scroll-mt-28 items-center text-center sm:mb-0"
       id="home"
     >
       <div className="flex items-center justify-center">
