@@ -37,7 +37,7 @@ export default function ContactFormEmail({
               <Text>{message}</Text>
               <Hr />
               <Text>
-                {firstName}'s email is: {senderEmail}
+                {firstName}&rsquo;s email is: {senderEmail}
               </Text>
             </Section>
           </Container>
