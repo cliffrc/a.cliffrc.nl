@@ -28,7 +28,7 @@ export const sendEmail = async (formData: TContactSchema) => {
   let data;
   try {
     data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.devu>",
+      from: "Contact Form <onboarding@resend.dev>",
       to: "cliff@10strata.com",
       subject: `A Message from cliffrc site [${firstName}]`,
       reply_to: senderEmail as string,
