@@ -12,9 +12,9 @@ const About = () => {
       <h2 className="text-2xl font-semibold">About</h2>
       <div className="mt-2 max-w-prose rounded-xl bg-foreground/10 px-9 pb-2 pt-8 text-sm">
         <p className="first">
-          Hello! I'm Cliff. I started learning web development in May 2020,
-          which is the start of the pandemic. I have nothing much to do so I
-          decided to learn web development from a udemy course, then started
+          Hello! I&rsquo;m Cliff. I started learning web development in May
+          2020, which is the start of the pandemic. I have nothing much to do so
+          I decided to learn web development from a udemy course, then started
           watching a bunch of youtube videos to explore more about web
           development especially frontend development. There are a lot of things
           and technologies to learn in frontend development and I am motivated
