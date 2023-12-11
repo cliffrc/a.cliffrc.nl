@@ -1,11 +1,20 @@
 "use client";
 import { sendEmail } from "@/lib/send-email";
 import { HeartPulse } from "lucide-react";
-import { FaPaperPlane } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 import SubmitBtn from "./submit-btn";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { TContactSchema, contactSchema } from "@/lib/types";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<TContactSchema>({ resolver: zodResolver(contactSchema) });
+
   return (
     <section
       className="mx-auto mt-12 flex scroll-mt-28 flex-col items-center sm:min-w-[30rem]"
