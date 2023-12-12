@@ -36,3 +36,22 @@ As `src/components/*.tsx` we want these:
 
 - Remove contents of `src/app/page.tsx`, to be replaced with `<MaxWidthWrapper>...`.
 - Create `src/lib/utils.ts` and run `pnpm i clsx tailwind-merge`
+
+## Text chunks
+
+```jsx
+return (
+  <p>
+    To sharpen your ideas about service and to product, brand awareness within a
+    fledgling businesses right from the start is often overlooked, expecting it
+    **to be obvious** or that it will come with time. or we allow as is of
+    strongly aware of at the start. Your why, your what for, and mostly who for.
+    As cruel amd ephermeral as the digital space can feel, by aligning your
+    brand with your values you effectively have a solid basecamp from where you
+    can develop and launch your campaigns. It makes communicating easier. As
+    time (and campaigns!) unfold, your brand's meaning will begin to change and
+    grow. While your core values will remain intact yet the brand &mdash; and
+    perhaps you as well &mdash; will have grown.
+  </p>
+);
+```
