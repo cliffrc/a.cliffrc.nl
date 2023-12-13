@@ -36,10 +36,16 @@ const About = () => {
           dogs, and learning new languages via DuoLingo.
         </p>
         <p className="pt-2">
+<<<<<<< HEAD
           One final note: I&apos;ve set myself the goal of completing &ldquo;The
           20 Hour Ukulele Challenge&ldquo;. It&apos;s a commitment to not only
           learn a new skill but also to embrace the joy of (self-made) music in
           my life.
+=======
+          One final note: I&apos;ve set myself the goal of completing "The 20
+          Hour Ukulele Challenge." It&apos;s a commitment to not only learn a
+          new skill but also to embrace the joy of (self-made) music in my life.
+>>>>>>> 5ab134ea5075c9db5d2ce8a6b6f4f897b3eb9e07
         </p>
         <ActivityIcon className="divIcon2 mx-auto" />
       </div>
