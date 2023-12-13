@@ -11,14 +11,15 @@ const About = () => {
           I am deeply passionate about web programming, a field I
           enthusiastically returned to after pivotal life experiences. My
           earlier foundation in computer science was solidified through the MITx
-          courses offered on EdX, and Harvard's CS50x, both of which provided a
-          rigorous and challenging introduction to the field. These academic
-          pursuits were complemented by practical application through full-stack
-          bootcamps on Udemy. I particularly relish the problem-solving aspects
-          of programming. My growing expertise lies in React, Next.js,
-          TypeScript, and Tailwind CSS, areas in which I continuously look to
-          explore and innovate. Learning how components synergize, especially
-          through tutorials and documentation, is immensely satisfying for me.
+          courses offered on EdX, and Harvard&apos;s CS50x, both of which
+          provided a rigorous and challenging introduction to the field. These
+          academic pursuits were complemented by practical application through
+          full-stack bootcamps on Udemy. I particularly relish the
+          problem-solving aspects of programming. My growing expertise lies in
+          React, Next.js, TypeScript, and Tailwind CSS, areas in which I
+          continuously look to explore and innovate. Learning how components
+          synergize, especially through tutorials and documentation, is
+          immensely satisfying for me.
         </p>
         <p className="pt-2 ">
           Currently, I am actively seeking work opportunities that align with my
@@ -35,9 +36,10 @@ const About = () => {
           dogs, and learning new languages via DuoLingo.
         </p>
         <p className="pt-2">
-          One final note: I've set myself the goal of completing 'The 20 Hour
-          Ukulele Challenge.' It's a commitment to not only learn a new skill
-          but also to embrace the joy of (self-made) music in my life.
+          One final note: I&apos;ve set myself the goal of completing &ldquo;The
+          20 Hour Ukulele Challenge&ldquo;. It&apos;s a commitment to not only
+          learn a new skill but also to embrace the joy of (self-made) music in
+          my life.
         </p>
         <ActivityIcon className="divIcon2 mx-auto" />
       </div>
