@@ -35,17 +35,13 @@ const Contact = () => {
       <HeartPulse className="h-12 w-12 text-muted-foreground" />
       <h2 className="mb-2 text-2xl font-semibold">Contact</h2>
 
-      <p className=" -mt-1  text-gray-700 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:hi@cliffrc.nl">
-          hi@cliffrc.nl
-        </a>{" "}
-        or through this form.
+      <p className="   text-gray-700 dark:text-white/80">
+        You can get in touch with me directly through this form.
       </p>
 
       {/* <!-- The FORM --> */}
       <form
-        className="mt-10 flex flex-col text-sm sm:mx-10 sm:min-w-[48ch]"
+        className="mt-6 flex flex-col text-sm sm:mx-10 sm:min-w-[48ch]"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input

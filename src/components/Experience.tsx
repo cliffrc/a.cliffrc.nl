@@ -1,40 +1,36 @@
-import React from "react";
 import { ActivityIcon, Waves } from "lucide-react";
-import SectionHeader from "./SectionHeader";
 
 const Experience = () => {
   return (
     <section
-      className="mt-12  flex scroll-mt-28 flex-col items-center"
+      className="mt-12  flex scroll-mt-28 flex-col items-center text-zinc-600"
       id="experience"
     >
       <Waves className="h-12 w-12 text-muted-foreground" />
       <h2 className="mb-2 text-2xl font-semibold">Experience</h2>
-      <div className="mt-2 max-w-prose rounded-xl bg-foreground/10 px-9 pb-2 pt-8 text-sm">
-        <p className="first font-normal">
-          Since 2019 I have been running my own firm, mainly carrying out
-          research into practical applications of AI, learning about (and
-          experimenting with) entrepreneurship, while engaging in some
-          post-divorce digital nomad life. Once the pandemic lockdowns ended I
-          was able to spend some time researching mental health work especially
-          in relation to personal fitness and how to use both can be used for
-          personal development. Prior to 2019 I was stay-at-home dad to our two
-          daughters where I was able to carry out the role of a super-dedicated
-          husband and father, as well as engage in plentiful home improvement
-          projects while keeping up to date with tech and web developments
-          (think: remote working before anyone else did).
+      <div className="mt-2 max-w-prose rounded-xl bg-foreground/10 px-12 pb-2 pt-8 text-sm">
+        <p>
+          Since 2019, I have been self-funding and running my own small firm,
+          focusing on a variety of projects that demonstrate both challenge and
+          promise. Prior to this, I embraced being a stay-at-home dad,
+          dedicating myself to raising our two daughters, while also keeping my
+          technical skills sharp through small-scale tech projects and numerous
+          home improvement endeavors.
         </p>
-        <p className="mt-4">
-          Prior to fatherhood and emigration to The Netherlands (Delft), I
-          worked in a variety of accounting and administrative roles at a range
-          of companies and charitable organizations. This included (among
-          others) Trans World Airlines, KLM Cargo, DHL International UK, Notting
-          Hill Housing Trust, Human Rights Watch, Farr Vintners, Nederlander
-          Theatres London and a number of others.{" "}
+        <p className="mt-2">
+          My professional journey began at Nederlander Theatres in London ending
+          as an assistant box office manager. This role marked the start of a
+          diverse career path which, prior to my graduation in 1996 and
+          subsequent move to the Netherlands in 1998, saw me contributing to
+          several companies and charitable organizations in administrative and
+          accounting capacities. My experience includes roles as an assistant
+          accountant at Farr Vintners and Trans World Airlines, a systems
+          accountant at Notting Hill Housing Trust, managing accounts payable at
+          DHL International UK, and a logistics assistant at KLM Cargo.
         </p>
-        <p className="mt-4">
-          In 1996 I graduated from SOAS, University of London with a Bachelors
-          in Economics and Development Studies.
+        <p className="mt-2">
+          Each position has played a significant part in shaping my versatile
+          skill set and professional perspective.
         </p>
         <ActivityIcon className="divIcon2 mx-auto" />
       </div>
