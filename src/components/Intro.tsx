@@ -15,10 +15,6 @@ const Intro = () => {
               src={cliffImg}
               alt="Image of Cliff"
               priority
-              style={{
-                width: "192px",
-                height: "auto",
-              }}
               className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl sepia-[0.2]"
             />
           </div>
