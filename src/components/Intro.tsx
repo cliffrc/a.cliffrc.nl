@@ -14,10 +14,11 @@ const Intro = () => {
             <Image
               src={cliffImg}
               alt="Image of Cliff"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
+              priority
+              style={{
+                width: "192px",
+                height: "auto",
+              }}
               className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl sepia-[0.2]"
             />
           </div>
